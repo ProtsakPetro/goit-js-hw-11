@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Franklin Gothic Medium, 'Arial Narrow', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+.gallery {
+  margin-top: 50px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-card {
+  height: 240px;
+  width: 350px;
+  border-radius: 1em;
+  box-shadow: 0 10px 20px #dbdbdb;
+}
+
+.info {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 0 1.5em;
+  color: rgb(93, 74, 74);
+}
+
+input {
+  border-radius: 1em;
+  width: 33%;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  color: #313030;
+  background: linear-gradient(to right, #b9baba, #404041);
+}
+
+input::placeholder {
+  color: #313030;
+}
+
+.search-form {
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+  gap: 25px;
+}
+
+button {
+  border-radius: 13px;
+  border-style: none;
+  color: #404041;
+  cursor: pointer;
+  height: 40px;
+  padding: 10px 16px;
+  margin-right: 40px;
+  background-color: #b9baba;
+}
