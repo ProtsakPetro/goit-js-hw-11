@@ -74,12 +74,12 @@ input::placeholder {
 }
 
 button {
-  border-radius: 13px;
+  border-radius: 50px;
   border-style: none;
-  color: #404041;
+  color: #fff;
   cursor: pointer;
   height: 40px;
-  padding: 10px 16px;
+  padding: 1px 16px;
   margin-right: 40px;
-  background-color: #b9baba;
+  background-color: #686969;
 }
