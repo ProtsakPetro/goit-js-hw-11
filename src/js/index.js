@@ -50,14 +50,16 @@ async function searchPhotos() {
 }
 
 function handleIntersect(evt) {
-  pixabayAPI.page += 1;
   if (evt[0].isIntersecting) {
+    // один варіант pixabayAPI.page += 1;
     searchMorePhotos();
   }
 }
 
 async function searchMorePhotos() {
   try {
+    // другий варіант
+    pixabayAPI.page += 1;
     const result = pixabayAPI.page * 40;
     const { data } = await pixabayAPI.fetchPhotos();
     gallery.insertAdjacentHTML('beforeend', createMarkup(data.hits));
